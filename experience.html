@@ -15,24 +15,53 @@
             font-family: Arial, sans-serif;
             color: black;
             text-align: center;
-            padding: 100px 10%;
+            padding-top: 80px;
+        }
+
+        /* ----- MENÚ DE NAVEGACIÓN ----- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 10px 20px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        /* ----- CONTENIDO ----- */
+        .experience-section {
+            max-width: 900px;
+            margin: 80px auto;
+            text-align: left;
+            padding: 20px;
         }
 
         h1 {
             font-size: 2.8em;
             margin-bottom: 20px;
-        }
-
-        .experience-section {
-            max-width: 900px;
-            margin: auto;
-            text-align: left;
+            color: #ff4d4d;
         }
 
         h2 {
             font-size: 2em;
             margin-top: 30px;
-            color: #ff4d4d;
         }
 
         p {
@@ -48,9 +77,20 @@
 </head>
 <body>
 
-    <h1>Professional Experience</h1>
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <a href="index.html">HOME</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="research.html">RESEARCH & PUBLICATIONS</a>
+        <a href="teaching.html">TEACHING & MENTORSHIP</a>
+        <a href="skills.html">SKILLS & TOOLS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
 
+    <!-- Contenido de la página -->
     <div class="experience-section">
+        <h1>Professional Experience</h1>
+
         <h2>Data Scientist & AI Specialist</h2>
         <p>
             With over 20 years of experience in data science, machine learning, and artificial intelligence, 
@@ -66,10 +106,4 @@
 
         <h2>Mentorship & Teaching</h2>
         <p>
-            Dedicated to guiding the next generation of data scientists, I provide <span class="highlight">mentorship and training</span> 
-            in Python, R, and cloud technologies, helping professionals build strong foundations in AI and machine learning.
-        </p>
-    </div>
-
-</body>
-</html>
+            Dedicated to guiding the next generation of data scientists, I provide <span class="highlight">mentorship and training
