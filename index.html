@@ -59,83 +59,30 @@
         .hero h1 {
             font-size: 3em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            margin-top: 80px; /* Para evitar que se oculte tras el menú */
-        }
-
-        /* ----- SECCIÓN "ABOUT" ----- */
-        .about {
-            background-color: white;
-            padding: 120px 10%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 50px;
-            min-height: 100vh;
-        }
-
-        .about img {
-            width: 400px;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #ff4d4d;
-        }
-
-        .about-text {
-            max-width: 600px;
-        }
-
-        .about-text h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            font-size: 1.2em;
-            line-height: 1.5;
+            margin-top: 80px;
         }
 
         /* Scroll suave */
         html {
             scroll-behavior: smooth;
         }
-
-        /* Espaciado para evitar que el contenido quede cubierto por el menú */
-        section {
-            padding-top: 80px;
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Menú de navegación -->
+    <!-- Menú de navegación con enlaces a páginas externas -->
     <nav class="navbar">
-        <a href="#home">HOME</a>
-        <a href="#experience">EXPERIENCE</a>
-        <a href="#research">RESEARCH & PUBLICATIONS</a>
-        <a href="#teaching">TEACHING & MENTORSHIP</a>
-        <a href="#skills">SKILLS & TOOLS</a>
-        <a href="#contact">CONTACT</a>
+        <a href="home.html">HOME</a>
+        <a href="experience.html">EXPERIENCE</a>
+        <a href="research.html">RESEARCH & PUBLICATIONS</a>
+        <a href="teaching.html">TEACHING & MENTORSHIP</a>
+        <a href="skills.html">SKILLS & TOOLS</a>
+        <a href="contact.html">CONTACT</a>
     </nav>
 
     <!-- Sección de inicio -->
     <section class="hero">
         <h1>J. Combariza</h1>
-    </section>
-
-    <!-- Sección "About" -->
-    <section class="about" id="about">
-        <img src="tu_foto.jpg" alt="J. Combariza">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                Data Science Mentor | Python & R Expert | Machine Learning Enthusiast | Deep Learning Specialist | AI & Generative AI Innovator | Prompt Engineer | Agile Methodology Practitioner | AWS Cloud Practitioner | Statistical Modeling Authority | Neurodiversity Advocate
-            </p>
-            <p>
-                I’m a Science Communicator 🧠 and Data Scientist 💻 who’s passionate about Artificial Intelligence 🤖, and my mission is to make the latest breakthroughs in AI and data science understandable and accessible to everyone 🌍.
-            </p>
-        </div>
     </section>
 
 </body>
