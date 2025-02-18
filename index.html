@@ -5,60 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jennyfer Combariza</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
             background: url('background-image.jpg') no-repeat center center/cover;
             color: white;
-        }
-        .container {
-            position: relative;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
+
         .menu {
             position: absolute;
             top: 20px;
             right: 20px;
+            display: flex;
+            gap: 15px;
         }
+
         .menu a {
             color: white;
-            margin: 0 10px;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1em;
+            font-weight: bold;
+            text-transform: uppercase;
+            opacity: 0.8;
+            transition: 0.3s;
         }
+
+        .menu a:hover {
+            opacity: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
         .cv-button {
             background-color: #ff4d4d;
             color: white;
-            padding: 10px 20px;
-            font-size: 1.5em;
+            padding: 12px 24px;
+            font-size: 1.2em;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .cv-button:hover {
+            background-color: #e60000;
         }
     </style>
 </head>
 <body>
-    <div class="menu">
-        <a href="#home">HOME</a>
-        <a href="#research">RESEARCH</a>
-        <a href="#teaching">TEACHING</a>
-        <a href="#service">SERVICE</a>
-        <a href="#about">ABOUT</a>
-        <a href="#miscellaneous">MISCELLANEOUS</a>
-    </div>
-    <div class="container">
-        <h1>Jennyfer Combariza</h1>
-        <a href="cv.pdf" class="cv-button">CV</a>
-    </div>
+
+    <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#service">Service</a>
+        <a href="#about">About</a>
+        <a href="#miscellaneous">Miscellaneous</a>
+    </nav>
+
+    <h1>Jennyfer Combariza</h1>
+    <a href="cv.pdf" class="cv-button">CV</a>
+
 </body>
 </html>
