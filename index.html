@@ -1,32 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jennyfer Combariza</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('background-image.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .menu a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .cv-button {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="service.html">Service</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="miscellaneous.html">Miscellaneous</a></li>
-        </ul>
-    </nav>
-
-    <!-- Sección Home -->
-    <section id="home">
-        <h1>Home</h1>
-        <p>Bienvenido a mi página web.</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Tu Nombre</p>
-    </footer>
+    <div class="menu">
+        <a href="#home">HOME</a>
+        <a href="#research">RESEARCH</a>
+        <a href="#teaching">TEACHING</a>
+        <a href="#service">SERVICE</a>
+        <a href="#about">ABOUT</a>
+        <a href="#miscellaneous">MISCELLANEOUS</a>
+    </div>
+    <div class="container">
+        <h1>Jennyfer Combariza</h1>
+        <a href="cv.pdf" class="cv-button">CV</a>
+    </div>
 </body>
 </html>
