@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jennyfer Combariza</title>
+    <title>J. Combariza</title>
     <style>
         * {
             margin: 0;
@@ -13,42 +13,21 @@
 
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             color: white;
+        }
+
+        .hero {
             height: 100vh;
+            background: url('fondo.png') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: relative;
-            background: url('fondo.png') no-repeat center center/cover;
+            text-align: center;
         }
 
-        .menu {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 15px;
-        }
-
-        .menu a {
-            color: white;
-            text-decoration: none;
-            font-size: 1em;
-            font-weight: bold;
-            text-transform: uppercase;
-            opacity: 0.8;
-            transition: 0.3s;
-        }
-
-        .menu a:hover {
-            opacity: 1;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+        .hero h1 {
+            font-size: 4em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
@@ -62,89 +41,59 @@
             font-weight: bold;
             transition: 0.3s;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            cursor: not-allowed;
+            opacity: 0.5;
         }
 
-        .cv-button:hover {
-            background-color: #e60000;
-        }
-
-        /* Estilos para la nueva sección */
-        .perfil {
+        .content {
             display: flex;
-            align-items: center;
-            max-width: 900px;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 40px;
-            text-align: left;
+            align-items: flex-start;
+            padding: 50px;
+            background: white;
             color: black;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .foto {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #ddd;
-            margin-right: 20px;
-        }
-
-        .descripcion {
+        .photo {
             flex: 1;
+            text-align: center;
         }
 
-        .descripcion h2 {
-            font-size: 1.5em;
-            color: #333;
+        .photo img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ddd;
+        }
+
+        .about {
+            flex: 2;
+            padding: 0 30px;
+        }
+
+        .about h2 {
+            font-size: 2em;
             margin-bottom: 10px;
-        }
-
-        .descripcion p {
-            font-size: 1em;
-            line-height: 1.5;
-            margin-bottom: 10px;
-        }
-
-        .link {
-            color: red;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .link:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <div class="hero">
+        <h1>J. Combariza</h1>
+        <button class="cv-button" disabled>CV</button>
+    </div>
 
-    <nav class="menu">
-        <a href="#home">Home</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#service">Service</a>
-        <a href="#about">About</a>
-        <a href="#miscellaneous">Miscellaneous</a>
-    </nav>
-
-    <h1>Jennyfer Combariza</h1>
-    <a href="cv.pdf" class="cv-button">CV</a>
-
-    <!-- Nueva sección de perfil -->
-    <section class="perfil">
-        <img src="perfil.jpg" alt="Foto de perfil" class="foto">
-        <div class="descripcion">
-            <h2>About Me</h2>
-            <p><strong>Data Science Mentor | Python & R Expert | Machine Learning & Deep Learning Specialist | AI & Generative AI Innovator | Prompt Engineer | Agile Practitioner | AWS Cloud Certified | Statistical Modeling Expert | Neurodiversity Advocate</strong></p>
-            
-            <p>I’m a <strong>Science Communicator</strong> 🧠 and <strong>Data Scientist</strong> 💻 with a deep passion for <strong>Artificial Intelligence</strong> 🤖. My mission is to bridge the gap between cutting-edge AI advancements and real-world applications, making complex concepts accessible to everyone 🌍.</p>
-            
-            <p>With a <strong>PhD in Statistics</strong> and over a <strong>decade of experience</strong>, I specialize in <strong>machine learning, deep learning, and cloud technologies</strong>, leveraging <strong>Python, R, and statistical modeling</strong> to drive innovation and solve real-world challenges. From optimizing decision-making to harnessing <strong>generative AI</strong> for business transformation, I help organizations unlock the full potential of their data.</p>
-            
-            <p>As a <strong>neurodiversity advocate</strong>, I believe that diverse teams foster <strong>creativity and groundbreaking solutions</strong>. I’m committed to fostering inclusive environments where innovation thrives. 🚀</p>
+    <div class="content">
+        <div class="photo">
+            <img src="foto.png" alt="J. Combariza">
         </div>
-    </section>
-
+        <div class="about">
+            <h2>Sobre mí</h2>
+            <p>Data Science Mentor | Python & R Expert | Machine Learning Enthusiast | Deep Learning Specialist | AI & Generative AI Innovator | Prompt Engineer | Agile Methodology Practitioner | AWS Cloud Practitioner | Statistical Modeling Authority | Neurodiversity Advocate</p>
+            <p>I’m a Science Communicator 🧠 and Data Scientist 💻 who’s passionate about Artificial Intelligence 🤖, and my mission is to make the latest breakthroughs in AI and data science understandable and accessible to everyone 🌍.</p>
+            <p>With a PhD in Statistics and more than 10 years of hands-on experience, I work with tools like Python, R, machine learning, and cloud technologies to help businesses grow and solve real-world problems. Whether it’s improving decision-making or using generative AI to spark innovation, my goal is to help people unlock the full potential of their data.</p>
+            <p>I’m also a big advocate for neurodiversity, and I believe diverse teams lead to more creative and innovative solutions.</p>
+        </div>
+    </div>
 </body>
 </html>
