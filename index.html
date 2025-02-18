@@ -13,9 +13,36 @@
 
         body {
             font-family: Arial, sans-serif;
-            color: white;
+            color: black;
         }
 
+        /* ----- MENÚ DE NAVEGACIÓN ----- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 8px 15px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        /* ----- SECCIÓN DE INICIO ----- */
         .hero {
             height: 100vh;
             background: url('fondo.png') no-repeat center center/cover;
@@ -24,10 +51,12 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            color: white;
+            position: relative;
         }
 
         .hero h1 {
-            font-size: 4em;
+            font-size: 3em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
@@ -45,55 +74,74 @@
             opacity: 0.5;
         }
 
-        .content {
-            display: flex;
-            align-items: flex-start;
-            padding: 50px;
-            background: white;
-            color: black;
-        }
-
-        .photo {
-            flex: 1;
-            text-align: center;
-        }
-
-        .photo img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #ddd;
-        }
-
+        /* ----- SECCIÓN "SOBRE MÍ" ----- */
         .about {
-            flex: 2;
-            padding: 0 30px;
+            background-color: white;
+            padding: 100px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
         }
 
-        .about h2 {
+        .about img {
+            width: 350px;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #ff4d4d;
+        }
+
+        .about-text {
+            max-width: 600px;
+        }
+
+        .about-text h2 {
             font-size: 2em;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.2em;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
-    <div class="hero">
+
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <a href="#about">Sobre mí</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- Sección de inicio -->
+    <section class="hero">
         <h1>J. Combariza</h1>
         <button class="cv-button" disabled>CV</button>
-    </div>
+    </section>
 
-    <div class="content">
-        <div class="photo">
-            <img src="foto.png" alt="J. Combariza">
-        </div>
-        <div class="about">
+    <!-- Sección Sobre Mí -->
+    <section class="about" id="about">
+        <img src="tu_foto.jpg" alt="J. Combariza">
+        <div class="about-text">
             <h2>Sobre mí</h2>
-            <p>Data Science Mentor | Python & R Expert | Machine Learning Enthusiast | Deep Learning Specialist | AI & Generative AI Innovator | Prompt Engineer | Agile Methodology Practitioner | AWS Cloud Practitioner | Statistical Modeling Authority | Neurodiversity Advocate</p>
-            <p>I’m a Science Communicator 🧠 and Data Scientist 💻 who’s passionate about Artificial Intelligence 🤖, and my mission is to make the latest breakthroughs in AI and data science understandable and accessible to everyone 🌍.</p>
-            <p>With a PhD in Statistics and more than 10 years of hands-on experience, I work with tools like Python, R, machine learning, and cloud technologies to help businesses grow and solve real-world problems. Whether it’s improving decision-making or using generative AI to spark innovation, my goal is to help people unlock the full potential of their data.</p>
-            <p>I’m also a big advocate for neurodiversity, and I believe diverse teams lead to more creative and innovative solutions.</p>
+            <p>
+                Data Science Mentor | Python & R Expert | Machine Learning Enthusiast | Deep Learning Specialist | AI & Generative AI Innovator | Prompt Engineer | Agile Methodology Practitioner | AWS Cloud Practitioner | Statistical Modeling Authority | Neurodiversity Advocate
+            </p>
+            <p>
+                I’m a Science Communicator 🧠 and Data Scientist 💻 who’s passionate about Artificial Intelligence 🤖, and my mission is to make the latest breakthroughs in AI and data science understandable and accessible to everyone 🌍.
+            </p>
+            <p>
+                With a PhD in Statistics and more than 10 years of hands-on experience, I work with tools like Python, R, machine learning, and cloud technologies to help businesses grow and solve real-world problems. Whether it’s improving decision-making or using generative AI to spark innovation, my goal is to help people unlock the full potential of their data.
+            </p>
+            <p>
+                I’m also a big advocate for neurodiversity, and I believe diverse teams lead to more creative and innovative solutions.
+            </p>
         </div>
-    </div>
+    </section>
+
 </body>
 </html>
+
