@@ -22,7 +22,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             padding: 15px 0;
             text-align: center;
             z-index: 1000;
@@ -32,8 +32,8 @@
             color: white;
             text-decoration: none;
             font-size: 18px;
-            margin: 0 20px;
-            padding: 10px 15px;
+            margin: 0 15px;
+            padding: 10px 20px;
             transition: 0.3s;
             display: inline-block;
         }
@@ -62,21 +62,7 @@
             margin-top: 80px; /* Para evitar que se oculte tras el menú */
         }
 
-        .cv-button {
-            background-color: #ff4d4d;
-            color: white;
-            padding: 12px 24px;
-            font-size: 1.2em;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: 0.3s;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-            cursor: not-allowed;
-            opacity: 0.5;
-        }
-
-        /* ----- SECCIÓN "SOBRE MÍ" ----- */
+        /* ----- SECCIÓN "ABOUT" ----- */
         .about {
             background-color: white;
             padding: 120px 10%;
@@ -88,8 +74,8 @@
         }
 
         .about img {
-            width: 350px;
-            height: 450px;
+            width: 400px;
+            height: 500px;
             object-fit: cover;
             border-radius: 50%;
             border: 5px solid #ff4d4d;
@@ -100,7 +86,7 @@
         }
 
         .about-text h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
 
@@ -109,7 +95,7 @@
             line-height: 1.5;
         }
 
-        /* Ajuste para que los enlaces del menú hagan scroll suave */
+        /* Scroll suave */
         html {
             scroll-behavior: smooth;
         }
@@ -125,33 +111,29 @@
 
     <!-- Menú de navegación -->
     <nav class="navbar">
-        <a href="#about">Sobre mí</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a href="#">HOME</a>
+        <a href="#">RESEARCH</a>
+        <a href="#">TEACHING</a>
+        <a href="#">SERVICE</a>
+        <a href="#about">ABOUT</a>
+        <a href="#">MISCELLANEOUS</a>
     </nav>
 
     <!-- Sección de inicio -->
     <section class="hero">
         <h1>J. Combariza</h1>
-        <button class="cv-button" disabled>CV</button>
     </section>
 
-    <!-- Sección Sobre Mí -->
+    <!-- Sección "About" -->
     <section class="about" id="about">
         <img src="tu_foto.jpg" alt="J. Combariza">
         <div class="about-text">
-            <h2>Sobre mí</h2>
+            <h2>About Me</h2>
             <p>
                 Data Science Mentor | Python & R Expert | Machine Learning Enthusiast | Deep Learning Specialist | AI & Generative AI Innovator | Prompt Engineer | Agile Methodology Practitioner | AWS Cloud Practitioner | Statistical Modeling Authority | Neurodiversity Advocate
             </p>
             <p>
                 I’m a Science Communicator 🧠 and Data Scientist 💻 who’s passionate about Artificial Intelligence 🤖, and my mission is to make the latest breakthroughs in AI and data science understandable and accessible to everyone 🌍.
-            </p>
-            <p>
-                With a PhD in Statistics and more than 10 years of hands-on experience, I work with tools like Python, R, machine learning, and cloud technologies to help businesses grow and solve real-world problems. Whether it’s improving decision-making or using generative AI to spark innovation, my goal is to help people unlock the full potential of their data.
-            </p>
-            <p>
-                I’m also a big advocate for neurodiversity, and I believe diverse teams lead to more creative and innovative solutions.
             </p>
         </div>
     </section>
