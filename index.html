@@ -74,12 +74,19 @@
         }
 
         .about img {
-            width: 400px;
-            height: 500px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #ff4d4d;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    padding: 5px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Sombra dorada elegante */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
+
+
+        
 
         .about-text {
             max-width: 600px;
