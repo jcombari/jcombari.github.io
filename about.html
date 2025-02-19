@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mí - Dr. J. Combariza</title>
+    <title>ABOUT - Dr. J. Combariza</title>
     <style>
-        body { font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
         .navbar {
             position: fixed;
             top: 0;
@@ -16,6 +23,7 @@
             text-align: center;
             z-index: 1000;
         }
+
         .navbar a {
             color: white;
             text-decoration: none;
@@ -25,29 +33,72 @@
             transition: 0.3s;
             display: inline-block;
         }
-        .navbar a:hover { background: rgba(255, 255, 255, 0.3); border-radius: 5px; }
-        .content { padding: 120px 10%; max-width: 900px; margin: auto; text-align: justify; }
-        .content h2 { font-size: 2.5em; margin-bottom: 20px; color: #222; }
-        .content p { font-size: 1.2em; line-height: 1.6; }
-        .academic-table {
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: justify;
+            color: #555;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            color: #444;
+        }
+
+        table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: #fafafa;
+            background-color: #fff;
         }
-        .academic-table th, .academic-table td {
-            padding: 12px;
+
+        table, th, td {
             border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
             text-align: left;
         }
-        .academic-table th {
+
+        th {
             background-color: #555;
             color: white;
         }
-        .academic-table tr:nth-child(even) { background-color: #f2f2f2; }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 <body>
+
     <nav class="navbar">
         <a href="index.html">HOME</a>
         <a href="experience.html">EXPERIENCE</a>
@@ -57,52 +108,53 @@
         <a href="about.html">ABOUT</a>
         <a href="miscellaneous.html">MISCELLANEOUS</a>
     </nav>
-    <section class="content">
-        <h2>Sobre Mí</h2>
+
+    <div class="container">
+        <h2>About Me</h2>
         <p>
-            Desde pequeña, me ha fascinado el poder del conocimiento. Fui la niña que siempre preguntaba por qué, 
-            la adolescente que disfrutaba resolviendo acertijos y la adulta que encontró en la ciencia de datos 
-            una forma de conectar la curiosidad con el impacto en el mundo real.
+            Since I was little, I have been fascinated by the power of knowledge. I was the child who always asked *why*, 
+            the teenager who loved solving puzzles, and the adult who found in data science a way to connect curiosity with real-world impact.
         </p>
         <p>
-            A lo largo de los años, he explorado el mundo de la inteligencia artificial, el deep learning y la computación 
-            en la nube, no solo como científica, sino también como mentora y divulgadora. Creo que el conocimiento debe 
-            compartirse, y me encanta ayudar a otros a entender y aplicar la IA para resolver desafíos significativos.
+            Over the years, I have explored the world of artificial intelligence, deep learning, and cloud computing, not only as a scientist 
+            but also as a mentor and communicator. I believe that knowledge should be shared, and I love helping others understand and apply AI 
+            to solve meaningful challenges.
         </p>
         <p>
-            Más allá de los títulos y la investigación, lo que realmente me impulsa es la emoción del descubrimiento, 
-            el placer de compartir el conocimiento y la convicción de que la IA puede transformar vidas cuando se usa 
-            con responsabilidad. También me apasiona la divulgación científica, acercando la inteligencia artificial y la ciencia 
-            de datos a profesionales y entusiastas de manera accesible.
+            Beyond the titles and the research, what truly drives me is the excitement of discovery, the joy of sharing knowledge, 
+            and the belief that AI can transform lives when used responsibly. I am also passionate about **scientific communication**, 
+            making AI and data science more accessible to professionals and enthusiasts alike.
         </p>
-        <h3>Formación Académica</h3>
-        <table class="academic-table">
+
+        <h3>Academic Background</h3>
+        <table>
             <tr>
-                <th>Grado</th>
-                <th>Institución</th>
-                <th>Año</th>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
             </tr>
             <tr>
-                <td>Ph.D. en Estadística</td>
+                <td>Ph.D. in Statistics</td>
                 <td>Universidad Central de Venezuela</td>
                 <td>2019</td>
             </tr>
             <tr>
-                <td>Máster en Matemáticas</td>
-                <td>Universidad Central de Venezuela</td>
-                <td>2004</td>
-            </tr>
-            <tr>
-                <td>Postgrado en Riesgo Financiero</td>
+                <td>Postgraduate in Financial Risk</td>
                 <td>Universidad Sergio Arboleda</td>
                 <td>2015</td>
             </tr>
             <tr>
-                <td>Licenciatura en Matemáticas</td>
+                <td>Master’s in Mathematics</td>
+                <td>Universidad Central de Venezuela</td>
+                <td>2004</td>
+            </tr>
+            <tr>
+                <td>Bachelor’s in Mathematics</td>
                 <td>Universidad Central de Venezuela</td>
                 <td>2001</td>
             </tr>
         </table>
-    </section>
+    </div>
+
 </body>
 </html>
