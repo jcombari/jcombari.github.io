@@ -1,17 +1,21 @@
 /* --- RESET DE ESTILOS --- */
+/* Se eliminan los márgenes y el padding predeterminado de todos los elementos para asegurar una base uniforme en los estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* --- ESTILOS GENERALES --- */
+/* Define la tipografía principal y los colores de fondo y texto para toda la página */
 body {
     font-family: Arial, sans-serif;
     color: black;
     background-color: white;
 }
 
-/* ----- MENÚ DE NAVEGACIÓN ----- */
+/* ----- MENÚ DE NAVEGACIÓN (APLICA A TODAS LAS PÁGINAS) ----- */
+/* Barra de navegación fija en la parte superior con un fondo oscuro y alineación centrada */
 .navbar {
     position: fixed;
     top: 0;
@@ -23,6 +27,7 @@ body {
     z-index: 1000;
 }
 
+/* Estilos para los enlaces del menú de navegación */
 .navbar a {
     color: white;
     text-decoration: none;
@@ -33,15 +38,16 @@ body {
     display: inline-block;
 }
 
+/* Efecto de resaltado cuando el usuario pasa el mouse sobre los enlaces */
 .navbar a:hover {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
 }
 
-/* ----- SECCIÓN DE INICIO ----- */
+/* ----- ESTILOS EXCLUSIVOS PARA index.html ----- */
 .hero {
-    height: 100vh;
-    background: url('../../images/fondo.png') no-repeat center center/cover;
+    height: 100vh; /* Ocupa el alto total de la pantalla */
+    background: url('../../images/fondo.png') no-repeat center center/cover; /* Imagen de fondo */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,13 +57,14 @@ body {
     position: relative;
 }
 
+/* Estilo para el título principal en la sección de inicio */
 .hero h1 {
     font-size: 3em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mayor contraste */
     margin-top: 80px;
 }
 
-/* ----- SECCIÓN "ABOUT" ----- */
+/* ----- SECCIÓN "ABOUT" (ESTO TAMBIÉN SE USA EN index.html) ----- */
 .about {
     background-color: white;
     padding: 120px 10%;
@@ -69,6 +76,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* Contenedor de imagen en la sección "About" */
 .image-container {
     display: flex;
     justify-content: center;
@@ -80,6 +88,7 @@ body {
     height: 520px;
 }
 
+/* Ajuste de la imagen dentro del contenedor */
 .image-container img {
     width: 100%;
     height: 100%;
@@ -87,29 +96,55 @@ body {
     border-radius: 50%;
 }
 
+/* Estilos del texto en la sección "About" */
 .about-text {
     max-width: 600px;
     text-align: left;
     color: gray;
 }
 
+/* Título dentro de "About" */
 .about-text h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: gray;
 }
 
+/* Párrafos en la sección "About" */
 .about-text p {
     font-size: 1.2em;
     line-height: 1.5;
 }
 
-/* Scroll suave */
+/* ----- SCROLL SUAVE PARA TODA LA WEB ----- */
 html {
     scroll-behavior: smooth;
 }
 
-/* Espaciado para evitar que el contenido quede cubierto por el menú */
+/* Espaciado para evitar que el contenido quede cubierto por el menú de navegación */
 section {
     padding-top: 80px;
+}
+
+/* ----- ESTILOS PARA experience.html ----- */
+.experience {
+    padding: 120px 10%;
+    text-align: left;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Título de la sección "Experience" */
+.experience h2 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* Párrafos dentro de "Experience" */
+.experience p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: gray;
+    margin-bottom: 20px;
 }
