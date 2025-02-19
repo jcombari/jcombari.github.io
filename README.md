@@ -43,8 +43,7 @@ I enjoy working with cutting-edge technologies, exploring generative AI, and hel
 ## 🔗 Connect with Me
 If you enjoy learning about AI, data science, or just want to chat, let’s connect! 😊  
 💼 **LinkedIn:** [Jennyfer Combariza](https://www.linkedin.com/in/jennyfer-combariza/)  
-🐦 **Twitter/X:** [@YourTwitter](https://twitter.com/)  
-📧 **Email:** your-email@example.com  
+ 
 
 Let's learn and grow together! 🚀
 
