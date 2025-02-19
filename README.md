@@ -1,6 +1,6 @@
 # 🌐 Welcome to My Website!
 
-## 🚀 jcombari.github.io
+## 🚀 [jcombari.github.io](https://jcombari.github.io/)
 
 Hello there! 👋 This is **my first personal website**, and I'm sure it has plenty of room for improvement! 😃 Here, you will find information about me, my journey, and my passion for data science and artificial intelligence.
 
