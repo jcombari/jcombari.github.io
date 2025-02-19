@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. J. Combariza</title>
+    <meta charset="UTF-8"> <!-- Configuración del conjunto de caracteres para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste para diseño responsivo en dispositivos móviles -->
+    <title>Dr. J. Combariza</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+
     <style>
+        /* --- RESET DE ESTILOS --- */
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el tamaño total del elemento */
         }
 
         body {
-            font-family: Arial, sans-serif;
-            color: black;
+            font-family: Arial, sans-serif; /* Fuente de texto general */
+            color: black; /* Color del texto predeterminado */
         }
 
         /* ----- MENÚ DE NAVEGACIÓN ----- */
         .navbar {
-            position: fixed;
+            position: fixed; /* Fija el menú en la parte superior de la pantalla */
             top: 0;
             left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            width: 100%; /* Ocupa el ancho completo de la pantalla */
+            background: rgba(0, 0, 0, 0.9); /* Color de fondo negro con opacidad */
             padding: 15px 0;
-            text-align: center;
-            z-index: 1000;
+            text-align: center; /* Centra los enlaces horizontalmente */
+            z-index: 1000; /* Asegura que el menú esté por encima del contenido */
         }
 
         .navbar a {
-            color: white;
-            text-decoration: none;
+            color: white; /* Color del texto de los enlaces */
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
             font-size: 18px;
-            margin: 0 15px;
-            padding: 10px 20px;
-            transition: 0.3s;
+            margin: 0 15px; /* Espaciado entre enlaces */
+            padding: 10px 20px; /* Espaciado interno */
+            transition: 0.3s; /* Agrega un efecto de transición suave */
             display: inline-block;
         }
 
         .navbar a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.3); /* Color de fondo al pasar el mouse */
+            border-radius: 5px; /* Bordes redondeados en hover */
         }
 
         /* ----- SECCIÓN DE INICIO ----- */
         .hero {
-            height: 100vh;
-            background: url('./images/fondo.png') no-repeat center center/cover;
+            height: 100vh; /* Ocupa toda la altura de la pantalla */
+            background: url('./images/fondo.png') no-repeat center center/cover; /* Imagen de fondo */
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* Centra verticalmente */
+            align-items: center; /* Centra horizontalmente */
             text-align: center;
-            color: white;
+            color: white; /* Color del texto */
             position: relative;
         }
 
         .hero h1 {
             font-size: 3em;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            margin-top: 80px; /* Para evitar que se oculte tras el menú */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto */
+            margin-top: 80px; /* Evita que el título quede oculto tras el menú */
         }
 
         /* ----- SECCIÓN "ABOUT" ----- */
         .about {
             background-color: white;
-            padding: 120px 10%;
+            padding: 120px 10%; /* Espaciado interno */
             display: flex;
-            align-items: center; /* Centra verticalmente */
+            align-items: center; /* Centra los elementos verticalmente */
             justify-content: center; /* Centra horizontalmente */
-            gap: 50px;
-            min-height: 100vh;
-            flex-wrap: wrap; /* Permite que los elementos se ajusten si la pantalla es más pequeña */
+            gap: 50px; /* Espaciado entre la imagen y el texto */
+            min-height: 100vh; /* Ocupa al menos el 100% de la altura de la pantalla */
+            flex-wrap: wrap; /* Permite que los elementos se acomoden si la pantalla es más pequeña */
         }
 
         .image-container {
             display: flex;
             justify-content: center; /* Centra la imagen horizontalmente */
             align-items: center; /* Centra la imagen verticalmente */
-            border: 5px solid gray;
-            border-radius: 50%;
-            padding: 10px;
-            width: 420px; /* Ajusta el tamaño total del contenedor */
-            height: 520px;
+            border: 5px solid lightgray; /* Borde gris claro */
+            border-radius: 50%; /* Forma circular */
+            padding: 10px; /* Espaciado interno */
+            width: 420px; /* Ancho del contenedor */
+            height: 520px; /* Alto del contenedor */
         }
 
         .image-container img {
-            width: 100%; /* Se ajusta al contenedor */
+            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
             height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
+            object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+            border-radius: 50%; /* Mantiene la forma circular */
         }
 
         .about-text {
-            max-width: 600px;
-            text-align: center;
+            max-width: 600px; /* Ancho máximo del bloque de texto */
+            text-align: left; /* Alinea el texto a la izquierda */
         }
 
         .about-text h2 {
@@ -104,7 +106,7 @@
 
         .about-text p {
             font-size: 1.2em;
-            line-height: 1.5;
+            line-height: 1.5; /* Espaciado entre líneas */
         }
 
         /* Scroll suave */
@@ -140,7 +142,7 @@
     <!-- Sección "About" -->
     <section class="about" id="about">
         <div class="image-container">
-            <img src="./images/foto_perfil.png" alt="J. Combariza">
+            <img src="./images/foto_perfil.png" alt="J. Combariza"> <!-- Imagen de perfil -->
         </div>
         <div class="about-text">
             <h2>About Me</h2>
