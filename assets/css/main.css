@@ -166,6 +166,7 @@ section {
 .experience p {
     font-size: 1.2em;
     line-height: 1.5;
-    color: #a8a8a8;
+    color: #787878;
     margin-bottom: 20px;
+	text-align: justify
 }
