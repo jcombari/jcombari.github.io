@@ -4,124 +4,7 @@
     <meta charset="UTF-8"> <!-- Configura el conjunto de caracteres para admitir caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la página para ser responsiva en dispositivos móviles -->
     <title>Dr. J. Combariza</title> <!-- Título que aparece en la pestaña del navegador -->
-
-    <style>
-        /* --- RESET DE ESTILOS --- */
-        * {
-            margin: 0; /* Elimina el margen predeterminado de todos los elementos */
-            padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
-            box-sizing: border-box; /* Asegura que el tamaño de los elementos incluya padding y border */
-        }
-
-        body {
-            font-family: Arial, sans-serif; /* Define el tipo de letra principal */
-            color: black; /* Color de texto predeterminado */
-        }
-
-        /* ----- MENÚ DE NAVEGACIÓN ----- */
-        .navbar {
-            position: fixed; /* Fija el menú en la parte superior */
-            top: 0;
-            left: 0;
-            width: 100%; /* Ocupa todo el ancho de la pantalla */
-            background: rgba(0, 0, 0, 0.9); /* Fondo negro con opacidad */
-            padding: 15px 0; /* Espaciado superior e inferior */
-            text-align: center; /* Centra los enlaces */
-            z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
-        }
-
-        .navbar a {
-            color: white; /* Color de los enlaces */
-            text-decoration: none; /* Elimina el subrayado */
-            font-size: 18px;
-            margin: 0 15px; /* Espaciado entre enlaces */
-            padding: 10px 20px; /* Espaciado interno */
-            transition: 0.3s; /* Transición suave al pasar el cursor */
-            display: inline-block;
-        }
-
-        .navbar a:hover {
-            background: rgba(255, 255, 255, 0.3); /* Cambia el fondo al pasar el cursor */
-            border-radius: 5px; /* Bordes redondeados */
-        }
-
-        /* ----- SECCIÓN DE INICIO ----- */
-        .hero {
-            height: 100vh; /* Ocupa toda la altura de la pantalla */
-            background: url('./images/fondo.png') no-repeat center center/cover; /* Imagen de fondo */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centra verticalmente */
-            align-items: center; /* Centra horizontalmente */
-            text-align: center;
-            color: white; /* Color del texto */
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 3em;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la visibilidad */
-            margin-top: 80px; /* Evita que el título quede cubierto por el menú */
-        }
-
-        /* ----- SECCIÓN "ABOUT" ----- */
-        .about {
-            background-color: white;
-            padding: 120px 10%; /* Espaciado interno */
-            display: flex;
-            align-items: center; /* Centra verticalmente */
-            justify-content: center; /* Centra horizontalmente */
-            gap: 50px; /* Espaciado entre imagen y texto */
-            min-height: 100vh; /* Al menos toda la altura de la pantalla */
-            flex-wrap: wrap; /* Permite ajuste en pantallas pequeñas */
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 5px solid lightgray; /* Borde alrededor de la imagen */
-            border-radius: 50%; /* Hace que el contenedor sea circular */
-            padding: 10px;
-            width: 420px;
-            height: 520px;
-        }
-
-        .image-container img {
-            width: 100%; /* Ajusta la imagen al contenedor */
-            height: 100%;
-            object-fit: cover; /* Mantiene proporción sin deformar */
-            border-radius: 50%; /* Hace que la imagen sea circular */
-        }
-
-        .about-text {
-            max-width: 600px; /* Ancho máximo del bloque de texto */
-            text-align: left; /* Alinea el texto a la izquierda */
-            color: gray;
-        }
-
-
-        .about-text h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: gray;
-        }
-
-        .about-text p {
-            font-size: 0.5 em;
-            line-height: 1.5; /* Espaciado entre líneas */
-        }
-
-        /* Scroll suave */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Espaciado para evitar que el contenido quede cubierto por el menú */
-        section {
-            padding-top: 80px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body> 
 
@@ -186,5 +69,6 @@
         </div>
     </section>
 
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
