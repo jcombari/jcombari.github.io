@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT - Dr. J. Combariza</title>
+    <title>Sobre Mí - Dr. J. Combariza</title>
     <style>
-        body { font-family: Arial, sans-serif; color: black; }
+        body { font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; }
         .navbar {
             position: fixed;
             top: 0;
@@ -26,9 +26,25 @@
             display: inline-block;
         }
         .navbar a:hover { background: rgba(255, 255, 255, 0.3); border-radius: 5px; }
-        .content { padding: 120px 10%; text-align: left; }
-        .content h2 { font-size: 2.5em; margin-bottom: 20px; }
-        .content p { font-size: 1.2em; line-height: 1.5; }
+        .content { padding: 120px 10%; max-width: 900px; margin: auto; text-align: justify; }
+        .content h2 { font-size: 2.5em; margin-bottom: 20px; color: #222; }
+        .content p { font-size: 1.2em; line-height: 1.6; }
+        .academic-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fafafa;
+        }
+        .academic-table th, .academic-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .academic-table th {
+            background-color: #555;
+            color: white;
+        }
+        .academic-table tr:nth-child(even) { background-color: #f2f2f2; }
     </style>
 </head>
 <body>
@@ -41,60 +57,52 @@
         <a href="about.html">ABOUT</a>
         <a href="miscellaneous.html">MISCELLANEOUS</a>
     </nav>
-    <section id="about-me">
-        <h2>About Me</h2>
+    <section class="content">
+        <h2>Sobre Mí</h2>
         <p>
-
-            Since I was little, I have been fascinated by the power of knowledge. I was the child who always asked *why*, 
-            the teenager who loved solving puzzles, and the adult who found in data science a way to connect curiosity with real-world impact.
-        
-            Over the years, I have explored the world of artificial intelligence, deep learning, and cloud computing, not only as a scientist 
-            but also as a mentor and communicator. I believe that knowledge should be shared, and I love helping others understand and apply AI 
-            to solve meaningful challenges.
-      
-            Beyond the titles and the research, what truly drives me is the excitement of discovery, the joy of sharing knowledge, 
-            and the belief that AI can transform lives when used responsibly. I am also passionate about **scientific communication**, 
-            making AI and data science more accessible to professionals and enthusiasts alike.
+            Desde pequeña, me ha fascinado el poder del conocimiento. Fui la niña que siempre preguntaba por qué, 
+            la adolescente que disfrutaba resolviendo acertijos y la adulta que encontró en la ciencia de datos 
+            una forma de conectar la curiosidad con el impacto en el mundo real.
         </p>
-    
-        <p><strong> </strong> 
-            <p> Desde pequeña, me ha fascinado el poder del conocimiento. Fui la niña que siempre preguntaba por qué, la adolescente que disfrutaba resolviendo acertijos y la adulta que encontró en la ciencia de datos una forma de conectar la curiosidad con el impacto en el mundo real.
-            
-            A lo largo de los años, he explorado el mundo de la inteligencia artificial, el deep learning y la computación en la nube, no solo como científica, sino también como mentora y divulgadora. Creo que el conocimiento debe compartirse, y me encanta ayudar a otros a entender y aplicar la IA para resolver desafíos significativos.
-            
-            Más allá de los títulos y la investigación, lo que realmente me impulsa es la emoción del descubrimiento, el placer de compartir el conocimiento y la convicción de que la IA puede transformar vidas cuando se usa con responsabilidad. También me apasiona la divulgación científica, acercando la inteligencia artificial y la ciencia de datos a profesionales y entusiastas de manera accesible.   
-            </p>
-
-      </p>
-        <h3>Academic Background</h3>
-        <table style="width:100%; border-collapse: collapse; background-color: #f7f7f7;">
-            <tr style="background-color: #e0e0e0; text-align: left;">
-                <th style="padding: 10px; border: 1px solid #ccc;">Degree</th>
-                <th style="padding: 10px; border: 1px solid #ccc;">Institution</th>
-                <th style="padding: 10px; border: 1px solid #ccc;">Year</th>
+        <p>
+            A lo largo de los años, he explorado el mundo de la inteligencia artificial, el deep learning y la computación 
+            en la nube, no solo como científica, sino también como mentora y divulgadora. Creo que el conocimiento debe 
+            compartirse, y me encanta ayudar a otros a entender y aplicar la IA para resolver desafíos significativos.
+        </p>
+        <p>
+            Más allá de los títulos y la investigación, lo que realmente me impulsa es la emoción del descubrimiento, 
+            el placer de compartir el conocimiento y la convicción de que la IA puede transformar vidas cuando se usa 
+            con responsabilidad. También me apasiona la divulgación científica, acercando la inteligencia artificial y la ciencia 
+            de datos a profesionales y entusiastas de manera accesible.
+        </p>
+        <h3>Formación Académica</h3>
+        <table class="academic-table">
+            <tr>
+                <th>Grado</th>
+                <th>Institución</th>
+                <th>Año</th>
             </tr>
             <tr>
-                <td style="padding: 10px; border: 1px solid #ccc;">Ph.D. in Statistics</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">Universidad Central de Venezuela</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">2019</td>
+                <td>Ph.D. en Estadística</td>
+                <td>Universidad Central de Venezuela</td>
+                <td>2019</td>
             </tr>
             <tr>
-                <td style="padding: 10px; border: 1px solid #ccc;">Master’s in Mathematics</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">Universidad Central de Venezuela</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">2004</td>
+                <td>Máster en Matemáticas</td>
+                <td>Universidad Central de Venezuela</td>
+                <td>2004</td>
             </tr>
             <tr>
-                <td style="padding: 10px; border: 1px solid #ccc;">Postgraduate in Financial Risk</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">Universidad Sergio Arboleda</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">2015</td>
+                <td>Postgrado en Riesgo Financiero</td>
+                <td>Universidad Sergio Arboleda</td>
+                <td>2015</td>
             </tr>
             <tr>
-                <td style="padding: 10px; border: 1px solid #ccc;">Bachelor’s in Mathematics</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">Universidad Central de Venezuela</td>
-                <td style="padding: 10px; border: 1px solid #ccc;">2001</td>
+                <td>Licenciatura en Matemáticas</td>
+                <td>Universidad Central de Venezuela</td>
+                <td>2001</td>
             </tr>
         </table>
     </section>
-    
 </body>
 </html>
