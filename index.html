@@ -1,48 +1,48 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Indica que el idioma principal de la página es español -->
 <head>
-    <meta charset="UTF-8"> <!-- Configuración del conjunto de caracteres para admitir caracteres especiales -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste para diseño responsivo en dispositivos móviles -->
-    <title>Dr. J. Combariza</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <meta charset="UTF-8"> <!-- Configura el conjunto de caracteres para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la página para ser responsiva en dispositivos móviles -->
+    <title>Dr. J. Combariza</title> <!-- Título que aparece en la pestaña del navegador -->
 
     <style>
         /* --- RESET DE ESTILOS --- */
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el tamaño total del elemento */
+            margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+            padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+            box-sizing: border-box; /* Asegura que el tamaño de los elementos incluya padding y border */
         }
 
         body {
-            font-family: Arial, sans-serif; /* Fuente de texto general */
-            color: black; /* Color del texto predeterminado */
+            font-family: Arial, sans-serif; /* Define el tipo de letra principal */
+            color: black; /* Color de texto predeterminado */
         }
 
         /* ----- MENÚ DE NAVEGACIÓN ----- */
         .navbar {
-            position: fixed; /* Fija el menú en la parte superior de la pantalla */
+            position: fixed; /* Fija el menú en la parte superior */
             top: 0;
             left: 0;
-            width: 100%; /* Ocupa el ancho completo de la pantalla */
-            background: rgba(0, 0, 0, 0.9); /* Color de fondo negro con opacidad */
-            padding: 15px 0;
-            text-align: center; /* Centra los enlaces horizontalmente */
-            z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+            width: 100%; /* Ocupa todo el ancho de la pantalla */
+            background: rgba(0, 0, 0, 0.9); /* Fondo negro con opacidad */
+            padding: 15px 0; /* Espaciado superior e inferior */
+            text-align: center; /* Centra los enlaces */
+            z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
         }
 
         .navbar a {
-            color: white; /* Color del texto de los enlaces */
-            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: white; /* Color de los enlaces */
+            text-decoration: none; /* Elimina el subrayado */
             font-size: 18px;
             margin: 0 15px; /* Espaciado entre enlaces */
             padding: 10px 20px; /* Espaciado interno */
-            transition: 0.3s; /* Agrega un efecto de transición suave */
+            transition: 0.3s; /* Transición suave al pasar el cursor */
             display: inline-block;
         }
 
         .navbar a:hover {
-            background: rgba(255, 255, 255, 0.3); /* Color de fondo al pasar el mouse */
-            border-radius: 5px; /* Bordes redondeados en hover */
+            background: rgba(255, 255, 255, 0.3); /* Cambia el fondo al pasar el cursor */
+            border-radius: 5px; /* Bordes redondeados */
         }
 
         /* ----- SECCIÓN DE INICIO ----- */
@@ -60,8 +60,8 @@
 
         .hero h1 {
             font-size: 3em;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto */
-            margin-top: 80px; /* Evita que el título quede oculto tras el menú */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la visibilidad */
+            margin-top: 80px; /* Evita que el título quede cubierto por el menú */
         }
 
         /* ----- SECCIÓN "ABOUT" ----- */
@@ -69,29 +69,29 @@
             background-color: white;
             padding: 120px 10%; /* Espaciado interno */
             display: flex;
-            align-items: center; /* Centra los elementos verticalmente */
+            align-items: center; /* Centra verticalmente */
             justify-content: center; /* Centra horizontalmente */
-            gap: 50px; /* Espaciado entre la imagen y el texto */
-            min-height: 100vh; /* Ocupa al menos el 100% de la altura de la pantalla */
-            flex-wrap: wrap; /* Permite que los elementos se acomoden si la pantalla es más pequeña */
+            gap: 50px; /* Espaciado entre imagen y texto */
+            min-height: 100vh; /* Al menos toda la altura de la pantalla */
+            flex-wrap: wrap; /* Permite ajuste en pantallas pequeñas */
         }
 
         .image-container {
             display: flex;
-            justify-content: center; /* Centra la imagen horizontalmente */
-            align-items: center; /* Centra la imagen verticalmente */
-            border: 5px solid lightgray; /* Borde gris claro */
-            border-radius: 50%; /* Forma circular */
-            padding: 10px; /* Espaciado interno */
-            width: 420px; /* Ancho del contenedor */
-            height: 520px; /* Alto del contenedor */
+            justify-content: center;
+            align-items: center;
+            border: 5px solid lightgray; /* Borde alrededor de la imagen */
+            border-radius: 50%; /* Hace que el contenedor sea circular */
+            padding: 10px;
+            width: 420px;
+            height: 520px;
         }
 
         .image-container img {
-            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+            width: 100%; /* Ajusta la imagen al contenedor */
             height: 100%;
-            object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
-            border-radius: 50%; /* Mantiene la forma circular */
+            object-fit: cover; /* Mantiene proporción sin deformar */
+            border-radius: 50%; /* Hace que la imagen sea circular */
         }
 
         .about-text {
@@ -118,7 +118,6 @@
         section {
             padding-top: 80px;
         }
-
     </style>
 </head>
 <body>
