@@ -4,97 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT - Dr. J. Combariza</title>
-    <style>
-        /* Importar tipografía moderna */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-        /* Estilos generales */
-        body { 
-            font-family: "Poppins", sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Barra de navegación fija */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            padding: 15px 0;
-            text-align: center;
-            z-index: 1000;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 0 15px;
-            padding: 10px 20px;
-            transition: 0.3s ease;
-            display: inline-block;
-            border-radius: 5px;
-        }
-        .navbar a:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Contenedor del contenido con márgenes invisibles */
-        .container {
-            max-width: 800px;
-            padding: 40px;
-            margin-top: 100px;
-            margin-bottom: 50px;
-            background: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-        }
-
-        h2, h3 { 
-            text-align: center; 
-            color: #222;
-        }
-
-        p { 
-            font-size: 1.1em; 
-            line-height: 1.8; 
-            text-align: justify;
-            color: #444;
-        }
-
-        /* Separador elegante */
-        .divider {
-            margin: 30px 0;
-            border-top: 2px solid #ddd;
-            opacity: 0.7;
-        }
-
-        /* Tabla académica mejorada */
-        .academic-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fafafa;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .academic-table th, .academic-table td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-        .academic-table th {
-            background-color: #f0f0f0;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 
@@ -105,12 +15,12 @@
         <a href="research.html">RESEARCH</a>
         <a href="teaching.html">TEACHING</a>
         <a href="service.html">SERVICE</a>
-        <a href="about.html">ABOUT</a>
+        <a href="about.html" class="active">ABOUT</a>
         <a href="miscellaneous.html">MISCELLANEOUS</a>
     </nav>
 
     <!-- Contenido principal -->
-    <div class="container">
+    <section class="page-content">
         <h2>About Me</h2>
         <p>
             Since I was little, I have been fascinated by the power of knowledge. I was the child who always asked *why*, 
@@ -170,7 +80,7 @@
                 <td>2001</td>
             </tr>
         </table>
-    </div>
+    </section>
 
 </body>
 </html>

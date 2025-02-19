@@ -150,23 +150,26 @@ section {
       - `color: #a8a8a8;` → Usa un color gris claro para el texto de los párrafos, manteniendo una jerarquía visual con el título.  
       - `margin-bottom: 20px;` → Añade un espacio de 20px entre los párrafos para mejorar la separación visual.  
 */
-.experience {
-    padding: 120px 10%;
+/* ----- ESTILOS PARA TODAS LAS PÁGINAS (EXCEPTO index.html) ----- */
+.page-content {
+    padding: 120px 10%;  /* Espaciado uniforme */
     text-align: left;
     max-width: 1800px;
     margin: auto;
 }
 
-.experience h2 {
+/* Título de cada sección */
+.page-content h2 {
     font-size: 2.5em;
-    color: #4a4a4a !important;
+    color: #4a4a4a !important; /* Gris oscuro para el título */
     margin-bottom: 20px;
 }
 
-.experience p {
+/* Párrafos en todas las secciones */
+.page-content p {
     font-size: 1.2em;
     line-height: 1.5;
-    color: #787878;
+    color: #787878; /* Gris intermedio */
     margin-bottom: 20px;
-	text-align: justify
+    text-align: justify; /* Texto justificado */
 }
