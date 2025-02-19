@@ -1,5 +1,7 @@
 /* --- RESET DE ESTILOS --- */
 /* Se eliminan los márgenes y el padding predeterminado de todos los elementos para asegurar una base uniforme en los estilos */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
 /* --- ESTILOS GENERALES --- */
 /* Define la tipografía principal y los colores de fondo y texto para toda la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Exo', sans-serif;
     color: black;
     background-color: white;
 }
@@ -126,7 +128,7 @@ section {
     padding-top: 80px;
 }
 
-/* ----- ESTILOS PARA experience.html ----- */
+/* ----- ESTILOS PARA TODAS LAS PÁGINAS EXCEPTO index.html ----- */
 .experience {
     padding: 120px 10%;
     text-align: left;
@@ -137,7 +139,7 @@ section {
 /* Título de la sección "Experience" */
 .experience h2 {
     font-size: 2.5em;
-    color: black;
+	color: #4a4a4a; /* Gris oscuro para el título */
     margin-bottom: 20px;
 }
 
@@ -145,6 +147,6 @@ section {
 .experience p {
     font-size: 1.2em;
     line-height: 1.5;
-    color: gray;
+    color: #a8a8a8; /* Gris claro para el resto del texto */
     margin-bottom: 20px;
 }
