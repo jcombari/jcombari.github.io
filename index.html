@@ -59,7 +59,7 @@
         .hero h1 {
             font-size: 3em;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-            margin-top: 80px;
+            margin-top: 80px; /* Para evitar que se oculte tras el menú */
         }
 
         /* ----- SECCIÓN "ABOUT" ----- */
@@ -73,15 +73,19 @@
             min-height: 100vh;
         }
 
-        .about img {
+        .image-container {
+            display: inline-block;
+            border: 5px solid gold; /* Color del borde */
+            border-radius: 50%; /* Hace que el borde sea ovalado */
+            padding: 10px; /* Espaciado entre la imagen y el borde */
+        }
+
+        .image-container img {
+            display: block;
             width: 400px;
             height: 500px;
             object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid transparent;
-            box-shadow: 0 0 10px rgba(218, 165, 32, 0.8);
-            background: linear-gradient(white, white) padding-box, 
-                        linear-gradient(45deg, #d4af37, #ffd700) border-box;
+            border-radius: 50%; /* Redondea la imagen */
         }
 
         .about-text {
@@ -130,7 +134,9 @@
 
     <!-- Sección "About" -->
     <section class="about" id="about">
-        <img src="./images/foto_perfil.png" alt="J. Combariza">
+        <div class="image-container">
+            <img src="./images/foto_perfil.png" alt="J. Combariza">
+        </div>
         <div class="about-text">
             <h2>About Me</h2>
             <p>
