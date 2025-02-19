@@ -1,13 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Define que el idioma principal del documento es español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Dr. J. Combariza</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a una hoja de estilos externa -->
+    <meta charset="UTF-8"> <!-- Configura la codificación de caracteres para admitir caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite el diseño responsivo en dispositivos móviles -->
+    <title>Experience - J. Combariza</title> <!-- Título que aparece en la pestaña del navegador -->
+
+    <style>
+        /* --- RESET DE ESTILOS --- */
+        * {
+            margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+            padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+            box-sizing: border-box; /* Asegura que el tamaño de los elementos incluya padding y border */
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Define la tipografía del sitio */
+            color: black; /* Define el color predeterminado del texto */
+            background-color: white; /* Define el color de fondo */
+        }
+
+        /* ----- MENÚ DE NAVEGACIÓN ----- */
+        .navbar {
+            position: fixed; /* Fija el menú en la parte superior de la pantalla */
+            top: 0; /* Asegura que esté alineado en la parte superior */
+            left: 0; /* Asegura que esté alineado a la izquierda */
+            width: 100%; /* Hace que el menú ocupe todo el ancho de la pantalla */
+            background: rgba(0, 0, 0, 0.9); /* Color de fondo negro con opacidad */
+            padding: 15px 0; /* Espaciado vertical dentro del menú */
+            text-align: center; /* Centra los enlaces del menú */
+            z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+        }
+
+        .navbar a {
+            color: white; /* Color de los enlaces del menú */
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            font-size: 18px; /* Tamaño de la fuente */
+            margin: 0 15px; /* Espaciado horizontal entre los enlaces */
+            padding: 10px 20px; /* Espaciado interno de los enlaces */
+            transition: 0.3s; /* Efecto de transición al pasar el cursor */
+            display: inline-block; /* Hace que los enlaces se comporten como bloques en línea */
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3); /* Cambia el fondo cuando el usuario pasa el cursor */
+            border-radius: 5px; /* Redondea los bordes */
+        }
+
+        /* ----- SECCIÓN DE EXPERIENCIA ----- */
+        .experience {
+            padding: 120px 10%; /* Espaciado interno para mejorar la legibilidad */
+            display: flex;
+            flex-direction: column; /* Acomoda los elementos en una columna */
+            align-items: center; /* Centra los elementos horizontalmente */
+            text-align: left; /* Alinea el texto a la izquierda */
+        }
+
+        .experience h2 {
+            font-size: 2.5em; /* Tamaño del título */
+            margin-bottom: 20px; /* Espaciado inferior para separar del contenido */
+        }
+
+        .experience p {
+            font-size: 1.2em; /* Tamaño del texto */
+            line-height: 1.5; /* Espaciado entre líneas */
+            max-width: 800px; /* Ancho máximo para controlar la legibilidad */
+        }
+
+        /* Scroll suave */
+        html {
+            scroll-behavior: smooth; /* Hace que el desplazamiento sea más fluido */
+        }
+
+        /* Espaciado para evitar que el contenido quede cubierto por el menú */
+        section {
+            padding-top: 80px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Menú de navegación --> 
+
+    <!-- Menú de navegación -->
     <nav class="navbar">
         <a href="index.html">HOME</a>
         <a href="experience.html">EXPERIENCE</a>
@@ -18,35 +90,16 @@
         <a href="miscellaneous.html">MISCELLANEOUS</a>
     </nav>
 
-    <!-- Sección de Experiencia -->
+    <!-- Sección de experiencia -->
     <section class="experience">
-        <div class="container">
-            <h1>Professional Experience / Experiencia Profesional</h1>
-            
-            <div class="job">
-                <h2>Senior Data Scientist | Científica de Datos Senior</h2>
-                <p><strong>Company Name - Location</strong></p>
-                <p>Dates of Employment</p>
-                <p>
-                    <strong>English:</strong> Led the development and deployment of machine learning models, focusing on deep learning and AI-driven solutions for business intelligence and automation. Managed data pipelines, feature engineering, and model optimization.
-                </p>
-                <p>
-                    <strong>Español:</strong> Lideré el desarrollo e implementación de modelos de aprendizaje automático, con énfasis en soluciones de inteligencia artificial y aprendizaje profundo para la automatización y la inteligencia empresarial. Gestioné flujos de datos, ingeniería de características y optimización de modelos.
-                </p>
-            </div>
-            
-            <div class="job">
-                <h2>Data Science Consultant | Consultora en Ciencia de Datos</h2>
-                <p><strong>Company Name - Location</strong></p>
-                <p>Dates of Employment</p>
-                <p>
-                    <strong>English:</strong> Provided expert guidance on data-driven strategies, predictive modeling, and cloud-based AI solutions. Advised clients on leveraging big data and analytics to improve decision-making.
-                </p>
-                <p>
-                    <strong>Español:</strong> Brindé asesoría experta en estrategias basadas en datos, modelado predictivo y soluciones de inteligencia artificial en la nube. Asesoré a clientes en el uso de big data y análisis para mejorar la toma de decisiones.
-                </p>
-            </div>
-        </div>
+        <h2>Experience</h2>
+        <p>
+            <!-- Aquí puedes colocar tu experiencia laboral extraída del currículum -->
+            Data Scientist with over 20 years of experience in data analysis, machine learning, and AI development.
+            Expertise in Python, R, cloud computing, and deep learning frameworks. Passionate about scientific
+            communication and making AI accessible to diverse audiences.
+        </p>
     </section>
+
 </body>
 </html>
