@@ -40,7 +40,7 @@ body {
 /* ----- SECCIÓN DE INICIO ----- */
 .hero {
     height: 100vh; /* Ocupa toda la altura de la pantalla */
-    background: url('./images/fondo.png') no-repeat center center/cover; /* Imagen de fondo */
+    background: url('../../images/fondo.png') no-repeat center center/cover; /* Imagen de fondo */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centra verticalmente */
