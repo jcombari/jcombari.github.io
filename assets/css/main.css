@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     color: black;
-    background-color: #f4f4f4; /* Fondo gris claro */
+    background-color: white;
 }
 
 /* ----- MENÚ DE NAVEGACIÓN ----- */
@@ -38,69 +38,78 @@ body {
     border-radius: 5px;
 }
 
-/* ----- SECCIÓN DE CONTENIDO GENERAL ----- */
-.content {
-    padding: 120px 10%;
-    text-align: left;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.content h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #333;
-}
-
-.content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #555;
-}
-
-/* ----- SECCIÓN INDEX ----- */
+/* ----- SECCIÓN DE INICIO ----- */
 .hero {
+    height: 100vh;
+    background: url('../../images/fondo.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 150px 10%;
-    background: linear-gradient(to right, #0073e6, #00b4d8);
     color: white;
+    position: relative;
 }
 
 .hero h1 {
     font-size: 3em;
-    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 80px;
 }
 
-.hero p {
-    font-size: 1.5em;
-}
-
-/* ----- ESTILO PARA LAS SECCIONES (Experience, Research, Teaching...) ----- */
-.section-container {
+/* ----- SECCIÓN "ABOUT" ----- */
+.about {
+    background-color: white;
+    padding: 120px 10%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
     justify-content: center;
-    padding: 50px 10%;
+    gap: 50px;
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 45%;
-    min-width: 300px;
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgray;
+    border-radius: 50%;
+    padding: 10px;
+    width: 420px;
+    height: 520px;
 }
 
-.card h3 {
-    color: #222;
-    margin-bottom: 10px;
-    font-size: 1.5em;
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.card p {
-    color: #666;
-    font-size: 1em;
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    color: gray;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Espaciado para evitar que el contenido quede cubierto por el menú */
+section {
+    padding-top: 80px;
 }
