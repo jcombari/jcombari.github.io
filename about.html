@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT - Dr. J. Combariza</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: black;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+        /* Estilos generales */
+        body { 
+            font-family: Arial, sans-serif; 
+            color: black; 
+            margin: 0; 
+            padding: 0; 
+            min-height: 100vh;
+            background-color: #f5f5f5;
         }
-        
+
+        /* Barra de navegación fija */
         .navbar {
             position: fixed;
             top: 0;
@@ -23,7 +26,6 @@
             text-align: center;
             z-index: 1000;
         }
-
         .navbar a {
             color: white;
             text-decoration: none;
@@ -33,72 +35,58 @@
             transition: 0.3s;
             display: inline-block;
         }
-
-        .navbar a:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 5px;
+        .navbar a:hover { 
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px; 
         }
 
+        /* Contenedor del contenido */
         .container {
             max-width: 800px;
-            margin: 100px auto 50px auto;
-            padding: 40px;
+            margin: 100px auto 50px;
+            padding: 20px;
             background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            font-size: 2.2em;
-            margin-bottom: 15px;
+        h2, h3 { 
+            text-align: center; 
             color: #333;
         }
 
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
+        p { 
+            font-size: 1.2em; 
+            line-height: 1.6; 
             text-align: justify;
-            color: #555;
         }
 
-        h3 {
-            font-size: 1.8em;
-            margin-top: 30px;
-            color: #444;
+        /* Separador para idiomas */
+        .divider {
+            margin: 30px 0;
+            border-top: 2px solid #ddd;
         }
 
-        table {
+        /* Tabla académica */
+        .academic-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: #fff;
+            background-color: #f7f7f7;
         }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
-            padding: 12px;
+        .academic-table th, .academic-table td {
+            padding: 10px;
+            border: 1px solid #ccc;
             text-align: left;
         }
-
-        th {
-            background-color: #555;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
+        .academic-table th {
+            background-color: #e0e0e0;
         }
     </style>
 </head>
 <body>
 
+    <!-- Barra de navegación -->
     <nav class="navbar">
         <a href="index.html">HOME</a>
         <a href="experience.html">EXPERIENCE</a>
@@ -109,6 +97,7 @@
         <a href="miscellaneous.html">MISCELLANEOUS</a>
     </nav>
 
+    <!-- Contenido principal -->
     <div class="container">
         <h2>About Me</h2>
         <p>
@@ -126,8 +115,23 @@
             making AI and data science more accessible to professionals and enthusiasts alike.
         </p>
 
+        <!-- Separador -->
+        <div class="divider"></div>
+
+        <h2>Sobre Mí</h2>
+        <p>
+            Desde pequeña, me ha fascinado el poder del conocimiento. Fui la niña que siempre preguntaba por qué, la adolescente que disfrutaba resolviendo acertijos y la adulta que encontró en la ciencia de datos una forma de conectar la curiosidad con el impacto en el mundo real.
+        </p>
+        <p>
+            A lo largo de los años, he explorado el mundo de la inteligencia artificial, el deep learning y la computación en la nube, no solo como científica, sino también como mentora y divulgadora. Creo que el conocimiento debe compartirse, y me encanta ayudar a otros a entender y aplicar la IA para resolver desafíos significativos.
+        </p>
+        <p>
+            Más allá de los títulos y la investigación, lo que realmente me impulsa es la emoción del descubrimiento, el placer de compartir el conocimiento y la convicción de que la IA puede transformar vidas cuando se usa con responsabilidad. También me apasiona la divulgación científica, acercando la inteligencia artificial y la ciencia de datos a profesionales y entusiastas de manera accesible.   
+        </p>
+
+        <!-- Sección académica -->
         <h3>Academic Background</h3>
-        <table>
+        <table class="academic-table">
             <tr>
                 <th>Degree</th>
                 <th>Institution</th>
