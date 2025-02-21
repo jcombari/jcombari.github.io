@@ -173,3 +173,34 @@ section {
     margin-bottom: 20px;
     text-align: justify; /* Texto justificado */
 }
+
+/* Estilo para el texto en la sección de bienvenida (intro-text):
+   - Tamaño de fuente ajustado para mejor legibilidad.
+   - Fondo suave y neutro (#f5f5f5) para dar un contraste sutil sin ser intrusivo.
+   - Relleno adecuado (20px) para separar el texto de los bordes, proporcionando un espacio confortable.
+   - Bordes redondeados para suavizar la apariencia y hacerla más amigable.
+   - Sombra sutil (box-shadow) para crear profundidad y dar un efecto de "flotado".
+   - Espaciado entre líneas (line-height) para mejorar la legibilidad.
+   - Transición suave para el cambio de estilo al pasar el ratón (hover), proporcionando un efecto visual interactivo.
+   
+   En el estado hover:
+   - El fondo se oscurece ligeramente (#e0e0e0) para proporcionar retroalimentación visual.
+   - La sombra se intensifica para dar un efecto de realce al elemento cuando el ratón pasa por encima.
+*/
+
+
+.intro-text {
+    font-size: 0.9em;
+    background-color: #f5f5f5; /* Fondo suave */
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 15px;
+    line-height: 1.6; /* Espaciado adecuado para mejor lectura */
+    transition: all 0.3s ease-in-out;
+}
+
+.intro-text:hover {
+    background-color: #e0e0e0; /* Color ligeramente más oscuro al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el ratón */
+}
