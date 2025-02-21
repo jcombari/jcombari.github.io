@@ -111,7 +111,7 @@ body {
 /* Título dentro de "About" */
 .about-text h2 {
     font-size: 2.5em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: gray;
 }
 
@@ -165,7 +165,7 @@ section {
 .page-content h2 {
     font-size: 2.5em;
     color: #4a4a4a !important; /* Gris oscuro para el título */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 /* Párrafos en todas las secciones */
