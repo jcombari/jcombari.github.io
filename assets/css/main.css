@@ -48,7 +48,7 @@ body {
 
 /* ----- ESTILOS EXCLUSIVOS PARA index.html ----- */
 .hero {
-    height: 100vh; /* Ocupa el alto total de la pantalla */
+    height: 50vh; /* Ocupa el alto total de la pantalla */
     background: url('../../images/fondo.png') no-repeat center center/cover; /* Imagen de fondo */
     display: flex;
     flex-direction: column;
