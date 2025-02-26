@@ -37,6 +37,37 @@ I enjoy working with cutting-edge technologies, exploring generative AI, and hel
 - **HTML, CSS** – Structure & styling of the website  
 - **GitHub Pages** – Hosting the site  
 - **Markdown** – Documentation  
+---
+
+## 📂 Website Structure
+
+```plaintext
+/my-website/
+│── index.html              (Main Page)
+│── experience.html         (Experience)
+│── research.html           (Research)
+│── teaching.html           (Teaching)
+│── service.html            (Service)
+│── about.html              (About Me)
+│── miscellaneous.html      (Miscellaneous)
+│
+│── assets/
+│   ├── css/
+│   │   ├── main.css        (Main Stylesheet)
+│   │
+│   ├── js/
+│   │   ├── jquery.min.js   (jQuery Library)
+│   │   ├── skel.min.js     (Responsive Design Framework)
+│   │   ├── util.js         (Utility Functions)
+│   │   ├── main.js         (Dynamic Menu & Animations)
+│   │
+│   ├── html/
+│   │   ├── navbar.html     (External Navigation Menu)
+│
+│── images/
+│   ├── fondo.png           (Background Image)
+│   ├── foto_perfil.png     (Profile Picture)
+│   ├── otras imágenes...   (Gallery or Other Visual Resources)
 
 ---
 
