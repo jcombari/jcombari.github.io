@@ -68,6 +68,7 @@ I enjoy working with cutting-edge technologies, exploring generative AI, and hel
 │   ├── fondo.png           (Background Image)
 │   ├── foto_perfil.png     (Profile Picture)
 │   ├── otras imágenes...   (Gallery or Other Visual Resources)
+```
 
 ---
 
