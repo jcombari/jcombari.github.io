@@ -74,7 +74,7 @@ I enjoy working with cutting-edge technologies, exploring generative AI, and hel
 
 ## 🔗 Connect with Me
 If you enjoy learning about AI, data science, or just want to chat, let’s connect! 😊  
-💼 **LinkedIn:** [JCombariza](https://www.linkedin.com/in/jennyfercombariza/)  
+💼 **LinkedIn:** [JCombariza](https://www.linkedin.com/in/jennyfercombariza/recent-activity/all/)  
  
 
 Let's learn and grow together! 🚀
